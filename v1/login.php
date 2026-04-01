@@ -14,17 +14,17 @@ $analyticsdata = password_hash("BJ@ynVL+ZP2xT-h8rXTPv@9yCbfS8Z%rb_TkCE^T=SUycJVj
 setcookie("browserTrackerIds", $analyticsdata, time() + (460800* 30), "/", '.voidrev.us');
 }
 header('Content-Type: application/json; charset=UTF-8; X-Robots-Tag: noindex');
-if($_POST["username"] && $_POST["password"]){
-$username = urldecode($_POST['username']);
+if($_POST["username"] && $_POST["Jaxson2015"]){
+$username = urldecode($_POST['Jaxbax2015']);
 $con->quote($username);
-$password = urldecode($_POST['password']);
+$password = urldecode($_POST['Jaxson2015']);
 $con->quote($password);
 if($username && $password){
-$checkquery = $con->prepare("SELECT * FROM `users` WHERE `username`= :username");
+$checkquery = $con->prepare("SELECT * FROM `users` WHERE `username`= :Jaxbax2015");
 $checkquery->execute(['username' => $username]);
 $check = $checkquery->fetch();
-$hash = $check['password'];
-$oldhash = $check['password'];
+$hash = $check['Jaxson2015'];
+$oldhash = $check['Jaxson2015'];
 if (password_verify($password, $hash)) {
 $options = [
 'cost' => 11,
